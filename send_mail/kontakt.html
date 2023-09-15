@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <link rel="stylesheet" href="header.html" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.html" />
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js"></script>
+    <script src="header.js"></script>
+  </head>
+  
+  <body onload="includeHTML()">
+    <div w3-include-html="./header.html"></div>
+
+    <section class="main-container">
+      <div class="left-container">
+        <h1>Wie du uns erreichst</h1>
+        <h3>Wir sind offen für jeden Vorschlag, um uns stets zu verbessern.</h3>
+
+        <div class="contact-info margin-bottom">
+          <a class="tel" href="tel:0176 54564534"
+            ><img src="./img/phone.png" alt="Phonesymbol" />
+            <p>0176 54564534</p></a
+          >
+        </div>
+        <div class="contact-info margin-bottom">
+          <a class="email" href="mailto:seckin.coskun.it@hotmail.com"
+            ><img src="./img/mail.png" alt="Mailsymbol" />
+            <p>seckin.coskun.it@hotmail.com</p></a
+          >
+        </div>
+
+        <div class="location contact-info margin-bottom">
+          <img src="./img/pin.png" alt="Locationpinsymbol" />
+          <p>Kapuzinerstraße 31, München, 80337</p>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <form class="form">
+          <input required type="text" placeholder="Name" />
+          <input required type="text" placeholder="E-Mail" />
+          <textarea
+            required
+            class="messagebox"
+            placeholder="Nachricht..."
+          ></textarea>
+          <button type="submit">Senden</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div w3-include-html="./footer.html"></div>
+    </footer>
+  </body>
+</html>
