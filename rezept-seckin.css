@@ -7,6 +7,7 @@ body {
 .body-recipe-seckin {
   font-family: "Raleway", sans-serif;
   margin: 0px 80px 0px 80px;
+  font-feature-settings: "lnum";
 }
 
 h1 {
@@ -100,4 +101,34 @@ span {
     outline: none;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
+}
+
+.recipe-table table {
+  font-size: 22px;
+  width: 100%;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+
+.recipe-table td {
+  height: 46px;
+ 
+}
+
+.recipe-table tr:first-child {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.recipe-table tr:last-child {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.recipe-table {
+  
+}
+
+.grey-row {
+  background-color: #efefef;
 }
