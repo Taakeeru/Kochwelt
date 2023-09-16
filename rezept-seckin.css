@@ -3,12 +3,53 @@
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
-    margin: 0px 120px 0px 120px;
+    margin: 0px 320px 0px 320px;
 }
 
-img {
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.grey-bg {
+    background-color: #EFEFEF;
+    margin-right: 32px;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+
+.-margin-right {
+    margin-right: 0px;
+}
+
+.small-recipe-info {
+    display: flex;
+}
+
+.small-recipe-info img {
+    margin-right: 16px;
+}
+
+.recipe-icon {
+    width: 20px;
+    height: auto;
+}
+
+.hero-container img {
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 60px;
 }
