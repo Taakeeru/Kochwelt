@@ -1,0 +1,527 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/raleway_bold.ttf');
+    src: url('fonts/ralway_regular.ttf');
+}
+
+.pagesLink{
+    display:block;
+    top:10px;
+    left:10px;
+    position: absolute;
+    color:#fff;
+    background: rgb(0, 42, 255);
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.croissant-section {
+    display: flex;
+    gap: 32px;
+    padding: 32px 160px;
+
+}
+
+
+.croissant-info h2 {
+    font-size: 32px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+
+
+.croissant-info p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 72px;
+}
+
+.green-button {
+    background: #008900;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.green-button:hover {
+    background: #01d201;
+}
+
+
+
+
+.croissant-section img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+/* Mediaquery for Smartphone - Croissant Section */
+
+@media (max-width: 768px) {
+
+    .croissant-section {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+
+    .croissant-section img {
+        object-fit: cover;
+        aspect-ratio: 2/1;
+        flex: 1;
+        border-radius: 10px;
+    }
+
+    .croissant-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .croissant-info h2 {
+        text-align: center;
+    }
+
+    .croissant-info p {
+        margin-bottom: 48px;
+    }
+
+}
+
+/* end of  mediaquery for Smartphone - Croissant Section */
+
+/* Mediaquery for Tablet - Croissant Section */
+
+@media (min-width:769px) and (max-width:1210px) {
+
+    .croissant-section img {
+        aspect-ratio: 1/1;
+    }
+
+    .croissant-section {
+        padding: 16px 40px;
+    }
+
+}
+
+/* End of Mediaquery for Tablet - Croissant Section */
+
+.newRecipes {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.newRecipes h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.quickLinks-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 160px 72px 160px;
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quickLinks {
+    text-decoration: none;
+    color: #000
+}
+
+.quickLinks img {
+    height: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quickLinks p {
+    text-align: center;
+    font-size: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Mediaquery of the Quicklink Section for Smartphone */
+
+@media (max-width: 768px) {
+    .quickLinks-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 20px 36px 20px;
+    }
+
+    .quickLinks {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .quickLinks img {
+        width: 100%;
+        flex: 1;
+        object-fit: cover;
+    }
+}
+
+/* end of mediaquery of the Quicklinks Section for Smartphone */
+
+/* Mediaquery for Tablet - Quicklinks Section */
+
+@media (min-width: 768px) and (max-width:1210px) {
+    .quickLinks-section {
+        padding: 16px 40px 36px 40px;
+    }
+}
+
+/* End of Mediaquery for Tablet - Quicklinks Section */
+
+.what-Is-Better {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.what-Is-Better h2 {
+    font-size: 32px;
+    text-align: center;
+    padding: 32px 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.what-is-better-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0px 160px 72px 160px;
+}
+
+.what-is-better-info p {
+    font-size: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.what-is-better-info img {
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+
+}
+
+/* Mediaquery for the What is Better Section */
+@media (max-width: 768px) {
+
+    .what-Is-Better img {
+        width: 100%;
+        flex: 1
+    }
+
+    .what-is-better-info {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px 20px 36px 20px;
+    }
+
+}
+
+
+/* end of the Mediaquery for the What is Better Section */
+
+/* Mediaquery for Tablet - Pfanne vs Wok Section */
+
+@media (min-width: 768px) and (max-width:1210px) {
+    .what-is-better-info {
+        padding: 0px 40px 36px 40px;
+    }
+
+}
+
+/* Mediaquery for Tablet - Pfanne vs Wok Section */
+
+/* Spaghetti Carbonara Recipe */
+
+.recipePresentation {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 160px;
+}
+
+.recipePresentation h1 {
+    font-size: 48px;
+}
+
+.spaghettiImage {
+    object-position: 0 30%;
+    object-fit: cover;
+    aspect-ratio: 3/0.5;
+    border-radius: 10px;
+}
+
+.preparation-infos-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 16px;
+}
+
+.preparation-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.info-image {
+    height: 18px;
+    object-fit: cover;
+}
+
+.preparation-info p {
+    font-size: 18px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Mediaquery for Smarphone Spaghetti Carbonara Recipe Presentation */
+
+@media (max-width: 768px) {
+    .recipePresentation {
+        margin: 32px 20px;
+    }
+
+    .recipePresentation h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .spaghettiImage {
+        aspect-ratio: 3/1;
+        object-position: 0 12%;
+    }
+
+    
+    .preparation-infos-container {
+        margin-top: 8px;
+        
+    }
+    
+    .preparation-info {
+        padding: 4px;
+    }
+    
+    .info-image {
+        height: 16px;
+    }
+    .preparation-info p {
+        font-size: 16px;
+    }
+}
+/* End of Mediaquery for Smarphone Spaghetti Carbonara Recipe Presentation */
+
+/* Mediaquery for Tablet Spaghetti Carbonara Recipe Presentation */
+@media (min-width: 769px) and (max-width:1200px) {
+    .recipePresentation {
+        margin: 32px 40px;
+    }
+    .recipePresentation h1 {
+        text-align: center;
+    }
+}
+
+/* End of Mediaquery for Tablet Spaghetti Carbonara Recipe Presentation */
+
+
+
+.ingredients {
+    padding: 0 160px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.input-container input {
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+.input-container p {
+    font-size: 24px;
+    padding-bottom:2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+
+table {
+    width: 100%;
+}
+
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+
+}
+
+
+td {
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* Mediaquery for Smartphone Spaghetti Carbonara Ingredients Section */
+
+@media (max-width: 768px) {
+    .ingredients {
+        padding: 0 20px;
+    }
+
+    .input-container p {
+        font-size: 12px;
+    }
+
+    .input-container input {
+        font-size: 10px;
+        padding: 4px;
+        margin-left: 2px;
+    }
+
+    .green-button {
+        padding: 6px 20px;
+        font-size: 8px;
+    }
+
+    td {
+        font-size: 16px;
+        padding: 8px;
+       
+    }
+
+}
+/*  End of Mediaquery for Smartphone Spaghetti Carbonara Ingredients Section */
+
+/* Mediaquery for Tablet Spaghetti Carbonara Recipe Presentation */
+
+@media (min-width: 768px) and (max-width:1200px) {
+    .ingredients {
+        padding: 0 40px;
+    }
+}
+
+/* End of Mediaquery for Tablet Spaghetti Carbonara Recipe Presentation */
+
+
+.proceedings {
+    margin: 0 160px 72px 160px;
+    
+}
+
+.proceedings h2 {
+    font-size: 32px;
+}
+
+.proceedingsParagraph {
+    margin-top: 30px;
+}
+
+.personal-pic {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.personal-pic img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 100px;
+
+}
+
+.personal-pic p {
+    font-size: 24px;
+}
+
+.proceedings h3 {
+    font-size: 24px;
+}
+
+ /* Mediaquery for Smartphone Spaghetti Carbonara Proceedings Section */ 
+
+@media (max-width: 768px) {
+    .proceedings {
+        margin: 0 20px 36px 20px;
+    }
+    .proceedings h2 {
+        font-size: 24px;
+    }
+    .proceedings h3 {
+        font-size: 16px;
+    }
+    .personal-pic img {
+        height: 50px;
+        width: 50px;
+    }
+    .personal-pic p {
+        font-size: 20px;
+    }
+}
+/*  End Mediaquery for Smartphone Spaghetti Carbonara Proceedings Section */ 
+
+
+/* Mediaquery for Tablet Spaghetti Carbonara Proceedings Section */ 
+@media (min-width: 768px) and (max-width:1200px) {
+    .proceedings {
+        margin: 0 40px 36px 40px;
+    }
+}
+/* End of Mediaquery for Smartphone Spaghetti Carbonara Proceedings Section */ 
+
+
+
+
+
+
+/* End of Spaghetti Carbonara Recipe */
+
+.br {
+    border: 1px solid red;
+}
