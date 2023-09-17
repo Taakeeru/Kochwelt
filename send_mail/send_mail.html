@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="header.html" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.html" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footer.css" />
     <script src="script.js"></script>
     <script src="header.js"></script>
   </head>
-  
+
   <body onload="includeHTML()">
     <div w3-include-html="./header.html"></div>
 
@@ -41,11 +41,15 @@
       </div>
 
       <div class="right-container">
-        <form class="form">
-          <input required type="text" placeholder="Name" />
+        <form
+          class="form"
+          action="http://gruppe-688.developerakademie.net/Kochwelt/kochwelt_projekt/send_mail/send_mail.php"
+        >
+          <input required name="name" type="text" placeholder="Name" />
           <input required type="text" placeholder="E-Mail" />
           <textarea
             required
+            name="message"
             class="messagebox"
             placeholder="Nachricht..."
           ></textarea>

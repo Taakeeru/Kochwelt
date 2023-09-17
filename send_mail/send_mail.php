@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'your@mail.com';
+$recipient = 'seckin.coskun.it@hotmail.com';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
