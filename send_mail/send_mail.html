@@ -14,7 +14,7 @@
   </head>
 
   <body onload="includeHTML()">
-    <div w3-include-html="./header.html"></div>
+    <div w3-include-html="../header.html"></div>
 
     <section class="main-container">
       <div class="left-container">
@@ -23,19 +23,19 @@
 
         <div class="contact-info margin-bottom">
           <a class="tel" href="tel:0176 54564534"
-            ><img src="./img/phone.png" alt="Phonesymbol" />
+            ><img src="../img/phone.png" alt="Phonesymbol" />
             <p>0176 54564534</p></a
           >
         </div>
         <div class="contact-info margin-bottom">
           <a class="email" href="mailto:seckin.coskun.it@hotmail.com"
-            ><img src="./img/mail.png" alt="Mailsymbol" />
+            ><img src="../img/mail.png" alt="Mailsymbol" />
             <p>seckin.coskun.it@hotmail.com</p></a
           >
         </div>
 
         <div class="location contact-info margin-bottom">
-          <img src="./img/pin.png" alt="Locationpinsymbol" />
+          <img src="../img/pin.png" alt="Locationpinsymbol" />
           <p>Kapuzinerstraße 31, München, 80337</p>
         </div>
       </div>
@@ -44,6 +44,7 @@
         <form
           class="form"
           action="http://gruppe-688.developerakademie.net/Kochwelt/kochwelt_projekt/send_mail/send_mail.php"
+          method="POST"
         >
           <input required name="name" type="text" placeholder="Name" />
           <input required type="text" placeholder="E-Mail" />
@@ -59,7 +60,7 @@
     </section>
 
     <footer>
-      <div w3-include-html="./footer.html"></div>
+      <div w3-include-html="../footer.html"></div>
     </footer>
   </body>
 </html>
