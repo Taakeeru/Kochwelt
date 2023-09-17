@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Main Settings */
+
 body {
   margin: 0;
 }
@@ -27,13 +29,15 @@ h3 {
 }
 
 h4 {
-    font-size: 28px;
-    font-weight: 300;
+  font-size: 28px;
+  font-weight: 300;
 }
 
 span {
   font-size: 20px;
 }
+
+/* AOT Section */
 
 .hero-container img {
   width: 100%;
@@ -81,37 +85,51 @@ span {
 }
 
 .recipe-calc {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 60px;
 }
 
 .recipe-calc h4 {
-    margin-right: 32px;
+  margin-right: 32px;
+}
+
+/* Input & Button Section */
+
+.input-button {
+  display: flex;
 }
 
 .green-button {
-    background-color: #008001;
-    height: 50px;
-    width: 180px;
-    color: white;
-    outline: none;
-    border-style: none;
-    font-size: 20px;
+  background-color: #008001;
+  height: 50px;
+  width: 180px;
+  color: white;
+  outline: none;
+  border-style: none;
+  font-size: 20px;
+}
+
+.green-button:hover {
+  background-color: #1aa51a;
+  cursor: pointer;
 }
 
 .input {
-    height: 30px;
-    width: 260px;
-    color: black;
-    font-size: 20px;
-    border: solid 2px #efefef;
-    outline: none;
-    border-bottom-left-radius: 16px;
-    border-top-left-radius: 16px;
-    padding: 8px 16px;
+  height: 30px;
+  width: 260px;
+  color: black;
+  font-size: 20px;
+  border: solid 2px #efefef;
+  outline: none;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  padding: 8px 16px;
 }
+
+/* Table Section */
 
 .recipe-table table {
   font-size: 22px;
@@ -123,7 +141,6 @@ span {
 
 .recipe-table td {
   height: 46px;
- 
 }
 
 .recipe-table tr td:first-child {
@@ -142,10 +159,14 @@ span {
   background-color: #efefef;
 }
 
+/* Prepare Section */
+
 .prepare-section h2 {
   margin-bottom: 20px;
   margin-top: 60px;
 }
+
+/* Author Section */
 
 .recipe-author {
   margin-bottom: 120px;
@@ -161,8 +182,107 @@ span {
 }
 
 .recipe-author img {
-  width:140px;
+  width: 140px;
   height: 140px;
   border-radius: 100px;
   margin-right: 32px;
+}
+
+@media (max-width: 1025px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  td {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .body-recipe-seckin {
+    margin: 0px 40px;
+  }
+}
+
+@media (max-width: 725px) {
+  .small-recipe-info2 {
+    flex-direction: column;
+  }
+
+  .grey-bg {
+    margin-bottom: 16px;
+    width: 220px;
+  }
+
+  .input {
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  td {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .small-recipe-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 525px) {
+  .recipe-calc {
+    margin-bottom: 120px;
+    flex-direction: column;
+  }
+
+  .recipe-calc h4 {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .body-recipe-seckin {
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .input-button {
+    display: flex;
+  }
+
+  .recipe-table tr td:first-child {
+    width: 60px;
+  }
 }

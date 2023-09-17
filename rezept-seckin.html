@@ -50,46 +50,57 @@
 
       <section class="recipe-calc">
         <h4>Zutaten für</h4>
-        <input class="input" type="number" min="1" placeholder="1" />
-        <button class="green-button">Portionen</button>
+        <div class="input-button">
+          <input
+            class="input"
+            id="input"
+            type="number"
+            min="1"
+            max="50"
+            value="1"
+          />
+          <button class="green-button" onclick="calculateIngredients()">
+            Portionen
+          </button>
+        </div>
       </section>
 
       <section class="recipe-table">
         <table>
           <tr class="grey-row">
-            <td>0,5 Kopf</td>
+            <td id="calculate1">0,5 Kopf</td>
             <td>Blumenkohl</td>
           </tr>
           <tr>
-            <td>0,5 Tasse</td>
+            <td id="calculate2">0,5 Tasse</td>
             <td>Mehl</td>
           </tr>
           <tr class="grey-row">
-            <td>0,5 TL</td>
+            <td id="calculate3">0,5 TL</td>
             <td>Natron</td>
           </tr>
           <tr>
-            <td>0,5 TL</td>
+            <td id="calculate4">0,5 TL</td>
             <td>Knoblauchgranulat</td>
           </tr>
           <tr class="grey-row">
-            <td>0,5 TL</td>
+            <td id="calculate5">0,5 TL</td>
             <td>Zwiebelgranulat</td>
           </tr>
           <tr>
-            <td>0,5 TL</td>
+            <td id="calculate6">0,5 TL</td>
             <td>Paprikapulver</td>
           </tr>
           <tr class="grey-row">
-            <td>0,5 TL</td>
+            <td id="calculate7">0,5 TL</td>
             <td>Kreuzkümmel</td>
           </tr>
           <tr>
-            <td>125 ml</td>
+            <td id="calculate8">125 ml</td>
             <td>Sojamilch</td>
           </tr>
           <tr class="grey-row">
-            <td>0,5 EL</td>
+            <td id="calculate9">0,5 EL</td>
             <td>Weißweinessig oder Zitronensaft</td>
           </tr>
           <tr>
@@ -102,15 +113,15 @@
 
         <table>
           <tr class="grey-row">
-            <td>1 EL</td>
+            <td id="calculate10">1 EL</td>
             <td>Agavendicksaft</td>
           </tr>
           <tr>
-            <td>1 EL</td>
+            <td id="calculate11">1 EL</td>
             <td>Sriracha-Sauce</td>
           </tr>
           <tr class="grey-row">
-            <td>1,5 EL</td>
+            <td id="calculate12">1,5 EL</td>
             <td>Öl, neutral</td>
           </tr>
         </table>
@@ -124,21 +135,21 @@
               src="./img/icons/clock-regular.svg"
               class="recipe-icon"
               alt="Uhr Icon"
-            /><span>Arbeitszeit ca. 15 Minuten</span>
+            /><span>Arbeit ca. 15 Min.</span>
           </div>
           <div class="grey-bg">
             <img
               src="./img/icons/clock-regular.svg"
               class="recipe-icon"
               alt="Uhr Icon"
-            /><span>Koch-/Backzeit ca. 40 Minuten</span>
+            /><span>Backzeit ca. 40 Min.</span>
           </div>
           <div class="grey-bg -margin-right">
             <img
               src="./img/icons/clock-regular.svg"
               class="recipe-icon"
               alt="Uhr Icon"
-            /><span>Gesamtzeit ca. 55 Minuten</span>
+            /><span>Total ca. 55 Min.</span>
           </div>
         </div>
 
