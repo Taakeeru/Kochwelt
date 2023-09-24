@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept Seçkin</title>
+
+    <link rel="stylesheet" href="rezept-seckin.css" />
+    <link rel="stylesheet" href="header.html" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.html" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="rezept-seckin.js"></script>
+    <script src="script.js"></script>
+    <script src="header.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="./header.html"></div>
+
+    <div class="body-recipe-seckin">
+      <section class="hero-container">
+        <h1>Vegane Blumenkohlwings</h1>
+
+        <img src="./img/vegan-wings.png" alt="" />
+      </section>
+
+      <section class="small-recipe-info">
+        <div class="grey-bg">
+          <img
+            src="./img/clock.svg"
+            class="recipe-icon"
+            alt="Uhr Icon"
+          /><span>15 Min.</span>
+        </div>
+        <div class="grey-bg">
+          <img
+            src="./img/brain.svg"
+            class="recipe-icon"
+            alt="Schwierigkeits Icon"
+          /><span>normal</span>
+        </div>
+        <div class="grey-bg -margin-right">
+          <img
+            src="./img/calendar.svg"
+            class="recipe-icon"
+            alt="Kalender Icon"
+          /><span>16.09.2023</span>
+        </div>
+      </section>
+
+      <section class="recipe-calc">
+        <h4>Zutaten für</h4>
+        <div class="input-button">
+          <input
+            class="input"
+            id="input"
+            type="number"
+            min="1"
+            max="50"
+            value="1"
+          />
+          <button class="green-button" onclick="calculateIngredients()">
+            Portionen
+          </button>
+        </div>
+      </section>
+
+      <section class="recipe-table">
+        <table>
+          <tr class="grey-row">
+            <td id="calculate1">0,5 Kopf</td>
+            <td>Blumenkohl</td>
+          </tr>
+          <tr>
+            <td id="calculate2">0,5 Tasse</td>
+            <td>Mehl</td>
+          </tr>
+          <tr class="grey-row">
+            <td id="calculate3">0,5 TL</td>
+            <td>Natron</td>
+          </tr>
+          <tr>
+            <td id="calculate4">0,5 TL</td>
+            <td>Knoblauchgranulat</td>
+          </tr>
+          <tr class="grey-row">
+            <td id="calculate5">0,5 TL</td>
+            <td>Zwiebelgranulat</td>
+          </tr>
+          <tr>
+            <td id="calculate6">0,5 TL</td>
+            <td>Paprikapulver</td>
+          </tr>
+          <tr class="grey-row">
+            <td id="calculate7">0,5 TL</td>
+            <td>Kreuzkümmel</td>
+          </tr>
+          <tr>
+            <td id="calculate8">125 ml</td>
+            <td>Sojamilch</td>
+          </tr>
+          <tr class="grey-row">
+            <td id="calculate9">0,5 EL</td>
+            <td>Weißweinessig oder Zitronensaft</td>
+          </tr>
+          <tr>
+            <td>etwas</td>
+            <td>Salz und Pfeffer</td>
+          </tr>
+        </table>
+
+        <h4>Für die Sauce</h4>
+
+        <table>
+          <tr class="grey-row">
+            <td id="calculate10">1 EL</td>
+            <td>Agavendicksaft</td>
+          </tr>
+          <tr>
+            <td id="calculate11">1 EL</td>
+            <td>Sriracha-Sauce</td>
+          </tr>
+          <tr class="grey-row">
+            <td id="calculate12">1,5 EL</td>
+            <td>Öl, neutral</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="prepare-section">
+        <h2>Zubereitung</h2>
+        <div class="small-recipe-info2">
+          <div class="grey-bg">
+            <img
+              src="./img/clock.svg"
+              class="recipe-icon"
+              alt="Uhr Icon"
+            /><span>Arbeit ca. 15 Min.</span>
+          </div>
+          <div class="grey-bg">
+            <img
+              src="./img/clock.svg"
+              class="recipe-icon"
+              alt="Uhr Icon"
+            /><span>Backzeit ca. 40 Min.</span>
+          </div>
+          <div class="grey-bg -margin-right">
+            <img
+              src="./img/clock.svg"
+              class="recipe-icon"
+              alt="Uhr Icon"
+            /><span>Total ca. 55 Min.</span>
+          </div>
+        </div>
+
+        <span
+          >Buttermilch herstellen, indem man Milch mit Essig bzw. Zitronensaft
+          vermischt und kurz zur Seite stellt. Den Ofen auf 225 °C Ober- und
+          Unterhitze vorheizen. Ein Backblech mit Backpapier auslegen. Den
+          Blumenkohl in 3 - 5 cm große Happen zerkleinern. In einer großen
+          Schüssel 1 kleine Kaffeetasse Mehl mit Natron, Granulaten und Gewürzen
+          mischen.<br /><br />
+          Buttermilch hinzugeben und gut mixen, bis keine Klumpen mehr vorhanden
+          sind. Den Blumenkohl in die Schüssel geben und gut umrühren, bis alle
+          Happen mit der Mischung bedeckt sind. Auf das Backpapier legen, aber
+          aufpassen, dass genug Freiraum zwischen den Röschen ist.<br /><br />
+          legen, aber aufpassen, dass genug Freiraum zwischen den Röschen ist.
+          Für 20 - 25 min in den Ofen geben, bis sie gold-braun gebacken sind,
+          nach der Hälfte der Zeit wenden. In der Zwischenzeit die Marinade
+          zubereiten. Honig oder Agavendicksaft mit der scharfen Sriracha-Sauce
+          und Öl verrühren.<br /><br />
+          Den Blumenkohl aus dem Ofen nehmen und in die Schüssel mit der
+          Marinade geben und umrühren, dann für weitere 15 - 20 min in den Ofen
+          tun. Der perfekte fleischlose Fingerfood-Snack für Partys,
+          Fernsehabende oder zum Super-Bowl gucken. Am besten mit Sour Cream,
+          Ranchdressing oder guter Knoblauchsoße servieren.</span
+        >
+      </section>
+
+      <section class="recipe-author">
+        <h5>Rezept erstellt von</h5>
+        <div class="personal">
+          <img src="./img/seck.jpg" alt="Bild von " />
+          <span>Seçkin Coskun</span>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div w3-include-html="./footer.html"></div>
+    </footer>
+  </body>
+</html>

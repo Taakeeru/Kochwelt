@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/raleway_bold.ttf');
+    src: url('fonts/ralway_regular.ttf');
+}
+
+
+header{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Raleway", sans-serif;
+}
+
+#headerImg {
+    height: 96px;
+    margin-left: 80px;
+}
+
+.headerButtonContainer{
+    margin: 48px 64px 0px 0px;
+}
+
+.headerMenuButtonMobile{
+    visibility: collapse;
+    position: absolute;
+    right: 0;
+    height: 32px;
+    margin-right: 24px;
+}
+
+.headerMenuButtonMobile:hover{
+    border-style: solid;
+    border-color: #008001;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.headerMobileSideMenu{
+    visibility: collapse;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.headerLinkClass{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    margin: 16px 8px;
+}
+
+.headerLinkClass:hover{
+    border-bottom-style: solid;
+    border-color: #008001;
+    border-width: 4px;
+    color: #008001;
+    cursor: pointer;
+}
+
+#sideMenuButtonStart{
+    visibility: collapse;
+}
+
+#sideMenuButtonRezept{
+    visibility: collapse;
+}
+
+#sideMenuButtonKontakt{
+    visibility: collapse;
+}
+
+#sideMenuButtonImpressum{
+    visibility: collapse;
+}
+
+/* Tablet version */
+@media(max-width: 1040px){
+    header{
+        height: 96px;
+    }
+
+    #headerImg{
+        height: 72px;
+        margin-left: 32px;
+    }
+
+    .headerButtonContainer{
+        margin: 48px 32px 0px 0px;
+    }
+
+    .headerLinkClass{
+        padding: 4px;
+        margin: 0px 4px;
+    }
+
+    #sideMenuButtonStart{
+        visibility: collapse;
+    }
+
+    #sideMenuButtonRezept{
+        visibility: collapse;
+    }
+
+    #sideMenuButtonKontakt{
+        visibility: collapse;
+    }
+
+    #sideMenuButtonImpressum{
+        visibility: collapse;
+    }
+}
+
+/* Mobile Version */
+/* 480 */
+@media(max-width: 720px){
+
+    header{
+        height: 80px;
+        font-size: 16px;
+    }
+    #headerImg{
+        height: 56px;
+        margin-left: 20px;
+        
+    }
+
+    .headerMenuButtonMobile{
+        visibility: visible;
+    }
+
+    .headerButtonContainer{
+        visibility: collapse;
+    }
+
+    .headerLinkClass{
+        text-decoration: none;
+        color: black;
+        padding: 8px;
+        margin: 16px 0px;
+    }
+
+    .headerLinkClass:hover{
+        color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-color: #008001;
+    }
+
+    #sideMenuButtonStart{
+        visibility: visible;
+        transform: translateY(-150%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    #sideMenuButtonRezept{
+        visibility: visible;
+        transform: translateY(-350%);
+        transition: transform 500ms ease-in-out;
+    }
+
+    #sideMenuButtonKontakt{
+        visibility: visible;
+        transform: translateY(-550%);
+        transition: transform 700ms ease-in-out;
+    }
+
+    #sideMenuButtonImpressum{
+        visibility: visible;
+        transform: translateY(-750%);
+        transition: transform 900ms ease-in-out;
+    }
+}

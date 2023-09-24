@@ -1,2 +1,0 @@
-# Kochwelt
- group-project

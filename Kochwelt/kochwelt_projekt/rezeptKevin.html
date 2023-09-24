@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt/Rezept</title>
+    <link rel="stylesheet" href="rezeptKevin.css" />
+    <link rel="stylesheet" href="header.html" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.html" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="rezeptKevin.js"></script>
+    <script src="header.js"></script>
+    <script src="script.js"></script>
+
+  </head>
+
+  <body onload="render(), includeHTML()">
+    <div w3-include-html="./header.html"></div>
+
+    <div class="contentContainer">
+      <h1 id="headline"></h1>
+
+      <img src="./img/butter_chicken.jpg" alt="Butter Chicken" id="mainImage" />
+
+      <div class="containerForTimeInformations">
+        <div class="containerSmallImg">
+          <img src="./img/clock.svg" alt="Clock" />
+          <p id="time">15Min.</p>
+        </div>
+        <div class="containerSmallImg">
+          <img src="./img/brain.svg" alt="brain" />
+          <p id="difficulty">simpel</p>
+        </div>
+        <div class="containerSmallImg">
+          <img src="./img/calendar.svg" alt="calender" />
+          <p id="date">28.09.2020</p>
+        </div>
+      </div>
+
+      <!-- Container for Calculator -->
+      <div class="quantityCalculator">
+        <h3>Zutaten für:</h3>
+        <input type="number" value="4" min="1" max="10" id="inputPortions" />
+        <button id="buttonPortions" onclick="render()"><p>Portionen</p></button>
+      </div>
+
+      <!-- Container for Incredients -->
+      <!-- <div id="ingredientsContainer"> -->
+      <table id="ingredientsContainer"></table>
+
+      <!-- </div> -->
+
+      <!-- Preparation -->
+      <div>
+        <h2>Zubereitung</h2>
+        <div class="containerForTimeInformations">
+          <div class="containerSmallImg">
+            <img src="./img/clock.svg" alt="clock" />
+            <p id="preparationTime">ca 15 Minuten</p>
+          </div>
+          <div class="containerSmallImg">
+            <img src="./img/clock.svg" alt="clock" />
+            <p id="totalTime">Gesamtzeit ca 15 Minuten</p>
+          </div>
+        </div>
+
+        <!-- Preparation Text -->
+        <div id="preparationText"></div>
+      </div>
+
+      <!-- Profile Container -->
+      <div>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+          <img src="./img/kevin.jpg" alt="Profil picture" id="profilePicture" />
+          <p id="autor"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div w3-include-html="./footer.html"></div>
+    </footer>
+  </body>
+</html>
